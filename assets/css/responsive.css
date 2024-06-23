@@ -169,8 +169,12 @@
     }
 
     .hero-wrap .title {
-        font-size: 5.2rem;
+        font-size: 3.5rem;
         margin-top: 20px;
+    }
+
+    .hero-wrap .info {
+        width: 100%;
     }
 
     .hero-wrap .info .desc {
@@ -239,7 +243,26 @@
         margin-bottom: 35px;
     }
 
+    .stats-trend {
+        left: 21px;
+    }
+
     .subscription {
         margin-top: 50px;
+    }
+
+    .subscription .info {
+        padding: 0px 20px;
+    }
+
+    .footer .row-top {
+        grid-template-columns: 1fr;
+        row-gap: 80px;
+    }
+
+    .footer .row-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 24px;
     }
 }
