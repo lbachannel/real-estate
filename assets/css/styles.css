@@ -44,6 +44,7 @@ a {
 
 .content {
     width: 1110px;
+    max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
 }
@@ -137,6 +138,7 @@ a {
     font-size: 1.8rem;
     /* design of figma 32px => 32 / 18 */
     line-height: 1.7;
+    color: #5a6473;
 }
 
 .hero-cta {
