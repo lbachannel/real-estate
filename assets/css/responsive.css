@@ -1,0 +1,245 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .moblie-header {
+        display: none;
+    }
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 991.98px) {
+    .navbar {
+        position: relative;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .toggle-menu svg {
+        width: 24px;
+        color: #666;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity, visibility, 0.25s;
+    }
+
+    .menu-drawer {
+        padding: 60px;
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: transform, 0.25s;
+    }
+
+    .menu-drawer ul {
+        margin-top: 32px;
+    }
+
+    .menu-drawer ul a {
+        color: #333;
+        display: block;
+        padding: 14px;
+        font-weight: 500;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .separate {
+        border-top: 1px solid #ebebeb;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-wrap .info {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hero-wrap .desc {
+        width: 80%;
+        margin: 30px auto auto;
+    }
+
+    .clients .images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .guide-item {
+        margin: 0;
+        flex: 1;
+    }
+
+    .featured .list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stats .row {
+        flex-direction: column;
+    }
+
+    .stats .img-block,
+    .stats .info {
+        width: 100%;
+    }
+
+    .stats .info {
+        order: 1;
+        padding: 0;
+    }
+
+    .stats .img-block {
+        order: 2;
+        margin-top: 80px;
+    }
+
+    .stats .sub-title {
+        width: 70%;
+    }
+
+    .stats .info .desc {
+        width: 100%;
+    }
+
+    .stats .row-qty {
+        flex-direction: row;
+    }
+
+    .stats .qty {
+        font-size: 5rem;
+    }
+
+    .stats .qty-desc {
+        font-size: 1.5rem;
+    }
+
+    .subscription .image {
+        display: none;
+    }
+
+    .footer .row-top {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        row-gap: 80px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .hide-on-tablet {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+    .menu-drawer {
+        padding: 40px;
+        inset: 0 25% 0 0;
+    }
+
+    .navbar .actions {
+        display: none;
+    }
+
+    .hero-wrap .title {
+        font-size: 5.2rem;
+        margin-top: 20px;
+    }
+
+    .hero-wrap .info .desc {
+        width: 100%;
+    }
+
+    .clients .desc:nth-last-child(1) {
+        text-align: end;
+    }
+
+    .clients .images {
+        row-gap: 20px;
+    }
+
+    .guides .list-guide {
+        flex-direction: column;
+    }
+
+    .guides .guide-item {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .guides .guide-item:first-child {
+        margin-top: 0;
+    }
+
+    .featured .row {
+        flex-direction: column;
+    }
+
+    .featured .row .link {
+        margin-top: 13px;
+    }
+
+    .featured .list {
+        margin-top: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .stats .sub-title {
+        width: 100%;
+        font-size: 3.5rem;
+    }
+
+    .stats .img-block .image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .stats .img-block {
+        margin-top: 45px;
+    }
+
+    .stats .row-qty {
+        flex-direction: column;
+    }
+
+    .stats .row-qty {
+        margin-top: 50px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .stats .row .qty-item:not(:last-child) {
+        margin-bottom: 35px;
+    }
+
+    .subscription {
+        margin-top: 50px;
+    }
+}
